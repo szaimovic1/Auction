@@ -1,0 +1,53 @@
+@import "@assets/globals";
+
+.black-footer {
+    background-color: $dark;
+    clear: both;
+    height: 356px;
+    margin-top: 5%;
+}
+
+.left-box, .right-box {
+    @extend .style-div;
+    @extend .column-parent;
+    margin: 24px 0px;
+    align-items: flex-start;
+}
+
+.left-box {
+    width: 154px;
+    left: 12.43%;
+}
+
+.right-box {
+    width: 225px;
+    right: 12.43%;
+}
+
+.box-content {
+    @extend .column-content;
+    @extend .style-font-text;
+    line-height: 24px;
+    margin: 0;
+    color: white;
+    margin: 4px 0px;
+}
+
+.box-content-dark {
+    @extend .box-content;
+    color: $grayfiller;
+    margin: 10px 0px;
+    padding-bottom: 3px;
+}
+
+.social-replace {
+    position: relative;
+    margin-top: 8%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .left-box, .right-box {
+      width: 100px;
+    }
+}

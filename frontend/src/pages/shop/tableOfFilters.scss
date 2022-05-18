@@ -1,0 +1,77 @@
+@import "@assets/globals";
+
+.table-of-filters {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 3%;
+}
+
+.tof-section {
+    width: 23%;
+    text-align: left;
+}
+
+.tof-smaller {
+    width: 20%;
+}
+
+.tof-bigger {
+    width: 25%;
+}
+
+.tof-all-hide {
+    display: none;
+}
+
+.tof-title {
+    @extend .style-font;
+    font-weight: 300;
+    color: $grayfiller;
+    margin-bottom: 10px;
+}
+
+.tof-section-container {
+    @extend .style-font-text;
+    font-weight: 400;
+    line-height: 17px;
+    color: $dark;
+    display: flex;
+}
+
+.tof-section-container-2 {
+    @extend .tof-section-container;
+    font-weight: bold;
+    color: $grayfiller;
+    border: 2px solid $lila;
+    padding: 10px;
+}
+
+.tof-section-controller {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.tof-all {
+    @extend .tof-section-container;
+    font-weight: bold;
+    color: $purple;
+    margin-bottom: 10px;
+}
+
+.tof-name {
+    width: fit-content;
+    margin-right: 10px;
+}
+
+.tof-x {
+    @extend .style-font;
+    color: $grayfiller;
+    background-color: white;
+    border: none;
+}
+
+.tof-x:focus {
+    @extend .when-focused;
+    color: $purple;
+}

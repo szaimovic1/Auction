@@ -1,0 +1,178 @@
+@import "@assets/globals";
+@import "@pages/home/home.scss";
+
+.add-item-fu-container {
+    width: 100%;
+    height: 20vh;
+    border: 1px solid $lila;
+    border-style: dashed;
+    display: flex;
+    align-items: center;
+}
+
+.prod-info-container {
+    width: 40%;
+    margin-top: 2%;
+    border: 1px solid $lila;
+    padding: 20px 5% 20px 5%;
+    display: grid;
+    grid-auto-flow: row;
+    text-align: left;
+    min-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-item-txt {
+    @extend .style-font;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.84px;
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.pi-inputs-description {
+    height: 10vh;
+    margin-bottom: 10px;
+}
+
+.description-capacity {
+    @extend .font-login;
+    width: 100%;
+    text-align: right;
+    color: $grayfiller;
+    margin-bottom: 20px;
+}
+
+.ai-align {
+    width: 100%;
+    text-align: center;
+}
+
+.upload-photos {
+    @extend .font-login;
+    letter-spacing: 0.63px;
+    text-transform: capitalize;
+    color: $purple;
+    margin-bottom: 5px;
+}
+
+.drag-drop {
+    @extend .lato-text;
+    font-weight: 400;
+    color: $dark;
+    margin-bottom: 5px;
+}
+
+.num-photos {
+    @extend .style-font;
+    font-weight: 700;
+    color: $grayfiller;
+}
+
+.add-item-category {
+    @extend .drag-drop;
+    background-color: white;
+    border: 2px solid $lila;
+    padding: 10px;
+    padding-left: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.ai-buttons {
+    @extend .add-item-category;
+    text-align: center;
+    font-weight: 700;
+}
+
+.aib-smaller {
+    @extend .ai-buttons;
+    width: 22%;
+}
+
+.aib-smaller-halfreverse {
+    @extend .aib-smaller;
+    margin-right: 5%;
+    border: 2px solid $purple;
+}
+
+.aib-invisible {
+    @extend .aib-smaller;
+    margin-right: 5%;
+    opacity: 100%;
+    border: none;
+}
+
+.ai-buttons-reverse {
+    @extend .ai-buttons;
+}
+
+.aib-smaller-reverse {
+    @extend .aib-smaller;
+}
+
+.ai-buttons-reverse, .aib-smaller-reverse {
+    background-color: $purple;
+    color: white;
+}
+
+.ai-category-div {
+    width: 47.5%;
+    margin-bottom: 20px;
+}
+
+.ai-dropdown-width {
+    width: 14.3%;
+    min-width: fit-content;
+}
+
+.ai-page-circle {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $purple;
+}
+
+.ai-circle-line {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ai-page-line {
+    width: 3%;
+    height: 7.5px;
+    border-bottom: 1px solid $lila;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.ai-circle-active {
+    background-color: $purple;
+}
+
+.ai-line-active {
+    border-color: $purple;
+}
+
+.price-dollar {
+    width: 12%;
+    border-right: none;
+    text-align: center;
+}
+
+.react-datepicker__input-container input {
+    display: block;
+    width: 15%;
+}
+
+.set-prices-explanation {
+    @extend .lato-text;
+    font-weight: 400;
+    color: $grayfiller;
+}

@@ -1,0 +1,14 @@
+@import "@assets/globals";
+@import "@pages/home/home.scss";
+
+.shop-container {
+    @extend .home-container;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+@media only screen and (max-width: 650px) {
+    .shop-container {
+        overflow-x: scroll;
+    }
+}

@@ -1,0 +1,245 @@
+@import "@assets/globals";
+@import "@pages/home/home.scss";
+@import "@components/grid_products_type_home/gridProductsTypeHome.scss";
+
+.product-page-container {
+    display: block;
+}
+
+.product-body {
+    @extend .home-container;
+}
+
+.gallery-info {
+    display: flex;
+}
+
+.gallery-info-element {
+    width: 50%;
+    text-align: left;
+}
+
+.gie-right {
+    padding-left: 5%;
+}
+
+.gie-left {
+    padding-right: 5%;
+}
+
+.info-sf-price {
+    margin-top: 20px;
+    display: flex;
+}
+
+.start-from-info, .price-info {
+    @extend .style-font-text;
+    font-weight: 300;
+    color: $grayfiller;
+}
+
+.price-info {
+    color: $purple;
+    font-weight: 700;
+}
+
+.start-from-info {
+    padding-right: 5px;
+}
+
+.start-from-dark {
+    @extend .start-from-info;
+    color: $dark;
+}
+
+.name-info {
+    @extend .style-font;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 51px;
+    letter-spacing: 0.84px;
+    color: black;
+}
+
+.related-bidders {
+    @extend .style-font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.84px;
+    color: black;
+    margin-top: 5%;
+    margin-bottom: 10px;
+}
+
+.info-bid-container {
+    margin-top: 20px;
+    padding: 0 20px 20px 20px;
+    border: 1px solid $lila;
+    width: fit-content;
+}
+
+.place-bid {
+    margin-top: 40px;
+    display: flex;
+}
+
+.input-bid-value {
+    width: 65%;
+    padding: 12px;
+    border: 1px solid $lila;
+    margin-right: 5%;
+}
+
+.bid-product-info {
+    @extend .font-login;
+    text-align: center;
+    font-weight: bold;
+    color: $dark;
+    padding: 10px;
+    letter-spacing: 0.63px;
+    width: 30%;
+    border-color: $purple;
+    background-color: white;
+    max-height: 50px;
+    overflow: hidden;
+}
+
+.prod-info-btn-style {
+    @extend .style-font-text; 
+    color: black;
+    padding: 0 5% 0 5%;
+    height: 56px;
+    border: none;
+    background-color: white;
+    text-align: center;
+    color: $grayfiller;
+}
+
+.prod-info-btn-style-chosen, .prod-info-btn-style:focus {
+    @extend .when-focused;
+    border-bottom: 1px solid $purple;
+    font-weight: bold;
+    color: $purple;
+}
+
+.product-info-description {
+    @extend .lato-text;
+    font-weight: 400;
+    color: $grayfiller;
+    margin-top: 30px;
+}
+
+.disable-bidding {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.div-table-bidders {
+    margin-top: 5%;
+}
+
+.table-container-bidders {
+    border: 1px solid $lila;
+    width: 100%;
+    text-align: left;
+    
+    td {
+        padding: 2%;
+    }
+}
+
+.table-font-base {
+    @extend .font-login;
+    color: $dark;
+}
+
+.table-col1, .table-col2, .table-col3 {
+    @extend .table-font-base;
+}
+
+.table-col1 {
+    width: 60%;
+}
+
+.table-col2 {
+    width: 25%;
+}
+
+.table-col3 {
+    width: 15%;
+}
+
+.img-bidders-container {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.img-bidders {
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.img-name, .bidders-date, .bidders-bid {
+    @extend .table-font-base;
+    font-weight: 700;
+    letter-spacing: 0.63px;
+    text-transform: capitalize;
+}
+
+.img-name-bidder {
+    margin-left: 10px;
+}
+
+.bidders-bid {
+    color: $grayfiller;
+}
+
+.bidders-bid-active {
+    @extend .bidders-bid;
+    color: $green;
+}
+
+.img-name {
+    display: flex;
+    align-items: center;
+}
+
+.more-bidders {
+    margin-top: 10px;
+    border-radius: 50%;
+    color: $purple;
+    border: 1px solid $lila;
+    background-color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px $purple;
+    float: right;
+}
+
+.more-bidders:focus {
+    @extend .when-focused;
+    border: 1px solid $purple;
+    box-shadow: 0 0 10px $purple;
+}
+
+@media only screen and (max-width: 1000px) {
+    .gallery-info {
+        display: block;
+    }
+
+    .gallery-info-element {
+        width: 100%;
+        overflow: auto;
+    }
+
+    .gie-left {
+        padding-right: 0;
+    }
+
+    .gie-right {
+        padding-left: 0;
+    }
+}

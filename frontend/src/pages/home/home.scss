@@ -1,0 +1,13 @@
+@import "@assets/globals";
+
+.home-container {
+    padding-top: 30px;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.category-heighlight-container {
+    display: inline-grid;
+    grid-template-columns: 30% auto;
+    width: 100%;
+}

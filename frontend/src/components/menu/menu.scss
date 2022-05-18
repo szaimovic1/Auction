@@ -1,0 +1,115 @@
+@import "@assets/globals";
+@import '@components/log_register/logRegister.scss';
+@import '@components/category_menu_home/categoryMenuHome.scss';
+
+.style-text {
+    @extend .style-font-text;
+    color: $dark;
+}
+
+.menu {
+    @extend .blackheader-navbar;
+    bottom: 0;
+    margin-top: 0.6%;
+    width: 262px;
+    height: 19px;
+}
+
+.active {
+    @extend .style-text;
+    color: $purple;
+    font-weight: bold;
+}
+
+.btn-dropdown-ma {
+    @extend .btn-focus;
+    color: $grayfiller;
+    border: none;
+}
+
+.dropdown-my-account {
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    text-align: left;
+    padding: 20px;
+    max-width: 170px;
+    border: 1px solid $lila;
+    right: 0;
+    display: none;
+}
+
+.div-hover:hover .dropdown-my-account {
+    display: block;
+}
+
+.div-hover:hover .profile {
+    margin-top: 40px;
+}
+
+.div-hover:hover .profile-button {
+    margin-left: 25px;
+}
+
+.home, .shop, .profile {
+    @extend .style-text;
+}
+
+.home {
+    @extend .login;
+}
+
+.home:hover, .shop:hover, .profile:hover {
+    @extend .on-hover;
+}
+
+.shop {
+    @extend .or;
+}
+
+.profile {
+    @extend .create-account;
+}
+
+.profile-button {
+    @extend .profile;
+    background-color: white;
+    border: none;
+}
+
+.profile-button:focus {
+    @extend .when-focused;
+}
+
+.div-hover {
+    @extend .profile;
+    margin-left: 0;
+}
+
+.dropdown-my-account-invisible {
+   @extend .dropdown-my-account;
+   position: relative;
+   width: 170px;
+   border: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: -15px;
+        right: 5%;
+    }
+
+    .home, .shop, .profile {
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-content:normal;
+        justify-content:normal;
+        align-items:normal;
+    }
+    .home, .profile {
+        margin: 0;
+    }
+}

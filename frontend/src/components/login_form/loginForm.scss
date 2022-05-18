@@ -1,0 +1,184 @@
+@import "@assets/globals";
+
+.form-container {
+    @extend .form-grid;
+    border: 1px solid $border;
+    padding: 70px; 
+    padding-top: 20px;
+    row-gap: 20px;
+}
+
+.flex-container {
+    min-width: fit-content;
+    height: fit-content;
+    padding: 40px;
+    display: inline-block;
+    align-items: center;
+    width: 60%;
+}
+
+.line {
+    top: 114px;
+    left: 0;
+    position: fixed;
+    border-top: 1px solid $border;
+    width: 100%;
+}
+
+.input-label {
+    @extend .font-login;
+    color: $darkbackground;
+    display: grid;
+    text-align: left;
+}
+
+.remember-label {
+    @extend .input-label;
+    display: block;
+}
+
+.button-login {
+    @extend .font-login;
+    height: 59px;
+    color: white;
+    background-color: $purple;
+    border: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button-login:focus, .check:focus, 
+  .unchecked:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.button-left, .button-right {
+    @extend .button-login;
+    color: $loginblack;
+    background-color: white;
+    border: 1px solid $border;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+    overflow: hidden;
+}
+
+.button-left {
+    margin-right: 15px;
+}
+
+.button-right {
+    margin-left: 15px;
+}
+
+.oauth {
+    @extend .style-div;
+    position: relative;
+}
+
+.check {
+    border: none;
+    margin-right: 7.5px;
+    height: 15px;
+    padding-left: 0;
+    background-color: white;
+    padding-top: 0;
+}
+
+.check:focus, .unchecked:focus {
+    background-color: white;
+}
+
+.unchecked {
+    background: white;
+    border: 1px solid $border;
+    margin-right: 15px;
+    height: 15px;
+    top: 5px;
+}
+
+.input-field {
+    border: 1px solid $border;
+    height: 63px;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+.input-field-div {
+    border: 1px solid $border;
+    height: 63px;
+    margin-top: 10px;
+    padding-left: 15px;
+    display: flex;
+    width: 100%;
+    padding-right: 15px;
+}
+
+.input-field-indiv {
+    width: 100%;
+    border: none;
+}
+
+.input-field-indiv:focus {
+    border: none;
+    outline: none;
+}
+
+.password {
+    @extend .font-login;
+    font-weight: bold;
+    color: $purple;
+    margin-top: 20px;
+    border: none;
+    text-align: center;
+    background-color: white;
+}
+
+.login-title {
+    @extend .style-font;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.84px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.img-icon {
+    height: 35px;
+    width: 50px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.error-msg {
+    font-weight: bold;
+    background-color: #DC143C;
+    color: white;
+    height: fit-content;
+    animation: fadeIn 5s;
+}
+
+.goto-login {
+    @extend .oauth;
+    justify-content: center;
+}
+
+.basic-text {
+    padding-top: 40px;
+    padding-right: 30px;
+    @extend .style-font-text;
+    font-weight: bold;
+    color: $grayfiller;
+}
+
+.pass-red {
+    @extend .input-label;
+    border: 1px solid $red;
+}
+
+.pass-red:focus {
+    outline: none;
+}

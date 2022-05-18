@@ -1,0 +1,32 @@
+@import "@assets/globals";
+
+.social-div {
+    @extend .style-div;
+    @extend .vertical-center;
+    left: 12.43%;
+    width: 106px;
+}
+
+.facebook, .instagram, .twitter {
+    @extend .style-div-element;
+    margin: 0px 8px;
+    font-size: 25px;
+}
+
+.facebook {
+    order: 0;
+    padding-top: 2px;
+    margin-left: 0;
+}
+
+.instagram {
+    order: 1;
+    padding-top: 2.5px;
+}
+
+.twitter {
+    order: 2;
+    margin-right: 0;
+}
+
+

@@ -1,0 +1,74 @@
+@import "@assets/globals";
+@import "@pages/home/home.scss";
+@import "@pages/seller/seller.scss";
+
+.settings-container {
+    @extend .home-container;
+}
+
+.settings-part-container {
+    border: 1px solid $lila;
+    text-align: left;
+    width: 50%;
+}
+
+.settings-title {
+    @extend .font-login;
+    font-weight: 400;
+    color: $dark;
+    margin: 3%;
+    margin-left: 5%;
+}
+
+.settings-question {
+    @extend .settings-title;
+    font-weight: 700;
+    letter-spacing: 0.63px;
+}
+
+.btn-settings {
+    @extend .bid-seller;
+    margin: 3%;
+    margin-left: 5%;
+}
+
+.jump-up-deactivate {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 402;
+    background-color: white;
+    padding: 5%;
+    box-shadow:2px 3px 5px white;
+    border-radius: 25px;
+    width: 30%;
+}
+
+.overlay-shared {
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.settings-overlay {
+    @extend .overlay-shared;
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 301;
+    opacity: 80%;
+}
+
+.jump-up-exit {
+    @extend .overlay-shared;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: white;
+    color: $dark;
+    font-weight: bold;
+    border: none;
+}
+
+

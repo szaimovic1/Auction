@@ -1,0 +1,35 @@
+@import "@assets/globals";
+
+.table-container-users {
+    border: 1px solid $lila;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    td {
+        padding: 2%;
+    }
+}
+
+.table-users-font-base {
+    @extend .font-login;
+    color: $dark;
+}
+
+.table-users-col1, .table-users-col2 {
+    @extend .table-users-font-base;
+}
+
+.table-users-col1 {
+    width: 40%;
+}
+
+.table-users-col2 {
+    width: 60%;
+}
+
+.input-search-users {
+    @extend .style-font-text;
+    padding: 10px;
+    border: none;
+    border: 1px solid $lila;
+}

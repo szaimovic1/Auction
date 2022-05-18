@@ -1,0 +1,184 @@
+@import "@assets/globals";
+@import '@components/login_form/loginForm.scss';
+
+.show-subcategories {
+    display: block;
+}
+
+.hide-subcategories {
+    display: none;
+}
+
+.shop-categories-container {
+    text-align: left;
+    border: 1px solid $border;
+    padding: 20px;
+    height: fit-content;
+}
+
+.shop-categories-container-size {
+    @extend .shop-categories-container;
+    margin-top: 10%;
+}
+
+.right-buttons {
+    @extend .basic-buttons;
+    text-align: right;
+}
+
+.buttons-categories {
+    display: inline-grid;
+    grid-template-columns: 50% auto;
+    width: 100%;
+    column-gap: 40%;
+}
+
+.title-filter {
+    @extend .lato-text;
+    font-weight: bold;
+    color: $purple;
+    margin-bottom: 20px;
+}
+
+.label-category {
+    @extend .font-shared;
+    margin-left: 10px;
+    color: $grayfiller;
+    margin-bottom: 15px;
+}
+
+.label-category-size {
+    @extend .label-category;
+    color: $dark;
+}
+
+.checked-category {
+    @extend .check;
+    color: $purple;
+    font-size: large;
+    font-weight: bold;
+}
+
+.unchecked-category {
+    @extend .unchecked;
+    border-color: $purple;
+}
+
+.basic-buttons {
+    @extend .font-shared;
+    border: none;
+    background-color: white;
+    margin-bottom: 15px;
+    color: $dark;
+}
+
+.basic-active {
+    @extend .basic-buttons;
+    color: $purple;
+    font-weight: bold;
+}
+
+.font-shared {
+    @extend .font-login;
+    font-size: 16px;
+    line-height: 17px;
+}
+
+.basic-buttons:focus {
+    @extend .when-focused;
+}
+
+.basic-buttons:hover {
+    @extend .on-hover;
+}
+
+.horizontal-slider {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    max-width: 166px;
+    margin: auto;
+}
+
+.horizontal-slider .example-thumb {
+    top: 12px;
+    width: 10px;
+    height: 10px;
+    line-height: 38px;
+}
+
+.example-thumb {
+    cursor: pointer;
+    position: absolute;
+    z-index: 100;
+    background: $purple;
+    border: 3px solid white;
+    border-radius: 100%;
+    display: block;
+    padding: 6px;
+    color: $purple;
+}
+
+.example-thumb.active {
+    background-color: $purple;
+}
+
+.example-track {
+    position: relative;
+    background: #ddd;
+}
+
+.example-track.example-track-1 {
+    background: $purple;
+}
+
+.horizontal-slider .example-track {
+    top: 19px;
+    height: 4px;
+}
+
+.price-range-div {
+    display: flex;
+}
+
+.price-range-left {
+    align-self: flex-start;
+}
+
+.price-range-right {
+    align-self: flex-end;
+}
+
+.price-range-left, .price-range-right {
+    @extend .style-font-text;
+    color: $grayfiller;
+    border: 2px solid $lila;
+    padding: 5%;
+}
+
+.price-range-divider {
+    width: 90%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.did-u-mean-container {
+    margin-top: 140px;
+    display: flex;
+    margin-left: 25%;
+}
+
+.did-u-mean {
+    @extend .font-login;
+    line-height: 22px;
+    letter-spacing: 0.63px;
+    color: $grayfiller;
+    margin-right: 10px;
+}
+
+.did-u-mean-btn {
+    @extend .did-u-mean;
+    color: $purple;
+    background-color: white;
+    border: none;
+}

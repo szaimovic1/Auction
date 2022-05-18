@@ -1,0 +1,16 @@
+@import "@assets/globals";
+
+.main-content {
+    margin-top: 114px;
+    min-height: calc(100vh - 470px);  
+    justify-content: center;
+    text-align: center;
+    min-width: fit-content;
+    padding: 0;
+}
+
+.static-pg {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}

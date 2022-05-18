@@ -1,0 +1,210 @@
+@import "@assets/globals";
+@import "@components/login_form/loginForm";
+
+.img-grid-container {
+    position: relative;
+}
+
+.shared-content {
+    position: absolute;
+    z-index: 100;
+    display: none;
+    height: 18vw;
+    width: 17vw;
+}
+
+.shared-content-vol2 {
+    height: 25vw;
+    width: 100%;
+}
+
+.img-buttons-container {
+    @extend .img-grid-container;
+    @extend .shared-content;
+    background-color: $purple;
+    opacity: 40%;
+}
+
+.img-two-buttons {
+    @extend .shared-content;
+    top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.img-two-buttons-vol2 {
+    @extend .img-two-buttons;
+    @extend .shared-content-vol2;
+}
+
+.img-buttons-container-vol2 {
+    @extend .img-buttons-container;
+    @extend .shared-content-vol2;
+}
+
+.img-grid-container:hover .img-buttons-container {
+    display: block;
+}
+
+.img-list-container:hover .img-list-buttons {
+    display: block;
+}
+
+.img-grid-container:hover .img-two-buttons {
+    display: block;
+}
+
+.img-list-container:hover .img-two-buttons {
+    display: block;
+}
+
+.img-list-container {
+    position: relative;
+}
+
+.space {
+    margin-right: 10px;
+}
+
+.whishlist-bid {
+    @extend .lato-text;
+    background-color: white;
+    border: none;
+    font-weight: 400;
+    color: $dark;
+    max-height: 30px;
+    overflow: hidden;
+    margin-top: 50%;
+}
+
+.img-list-buttons {
+    @extend .img-list-container;
+    @extend .shared-content;
+    background-color: $purple;
+    opacity: 40%;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.img-smaller {
+    position: relative;
+    object-fit: cover;
+    height: 18vw;
+    width: 17vw;
+}
+
+.img-smaller-vol2 {
+    @extend .shared-content-vol2;
+    position: relative;
+    object-fit: cover;
+}
+
+.details-container {
+    display: block;
+    width: 17vw;
+}
+
+.details-container-vol2 {
+    display: block;
+    width: 100%;
+}
+
+.details-container-list {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.display-block-list {
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+    position: relative;
+}
+
+.price-grid, .start-from-grid {
+    @extend .style-font-text;
+    text-align: left;
+    font-weight: 500;
+    letter-spacing: 0.84px;
+    color: $grayfiller;
+}
+
+.text-price {
+    display: flex;
+    min-width: 30px;
+    overflow: visible;
+}
+
+.text-price-list {
+    @extend .text-price;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    overflow: visible;
+}
+
+.list-description {
+    @extend .lato-text;
+    font-weight: normal;
+    color: $grayfiller;
+}
+
+.item-name {
+    @extend .login-title;
+    margin-bottom: 5px;
+}
+
+.item-name-vol2 {
+    @extend .item-name;
+    text-align: left;
+}
+
+.price-grid {
+    color: $purple;
+}
+
+.start-from-grid {
+    padding-right: 2px;
+}
+
+.start-from-list, .price-list {
+    @extend .style-font;
+    text-align: left;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 51px;
+    letter-spacing: 0.84px;
+    color: $purple;
+    min-width: fit-content;
+}
+
+@media only screen and (max-width: 900px) {
+    .start-from-list, .price-list, .item-name {
+      font-size: medium;
+    }
+
+    .text-price-list {
+        position: relative;
+    }
+
+    .whishlist-bid {
+        margin-top: 40%;
+    }
+
+    .space {
+        margin-left: 5px;
+    }
+
+    .top-setting {
+        margin-top: 2px;
+    }
+
+    .start-from-grid, .price-grid {
+        font-size: small;
+    }
+}
+

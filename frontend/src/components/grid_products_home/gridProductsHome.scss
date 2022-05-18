@@ -1,0 +1,71 @@
+@import "@assets/globals";
+
+.grid-base {
+    display: grid;
+    text-align: left;
+    column-gap: 5px;
+}
+
+.grid-home-content {
+    @extend .grid-base;
+    row-gap: 3%;
+    height: 40vw;
+    padding-top: 20px;
+    overflow-y: scroll;
+    grid-template-columns: auto auto auto auto;
+}
+
+.grid-display {
+    @extend .grid-base;
+    grid-template-columns: auto auto auto;
+    row-gap: 15px;
+    grid-template-rows: repeat(auto-fit, minmax(1fr));
+    width: 60vw;
+    margin-left: 20px;
+}
+
+.product-info-display {
+    @extend .grid-base;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.featured-products {
+    column-gap: 5%;
+    overflow-x: scroll;
+    padding-top: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 30%;
+    width: 75vw;
+}
+
+.list-display {
+    display: block;
+    padding-left: 20px;
+}
+
+.button-explore {
+    display: block;
+}
+
+.explore-more {
+    @extend .font-login;
+    font-weight: bold;
+    letter-spacing: 0.63px;
+    background-color: $purple;
+    color: white;
+    width: 228px;
+    height: 59px;
+    border: none;
+    text-align: center;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+.explore-more:focus {
+   @extend .when-focused;
+   background-color: $purple;
+}

@@ -1,0 +1,33 @@
+@import "@assets/globals";
+
+.category-layout, button {
+    @extend .lato-text;
+    text-align: left;
+}
+
+.category-layout {
+    color: $purple;
+    font-weight: bold;
+    display: grid;
+}
+
+.btn-focus {
+    font-weight: normal;
+    color: $dark;    
+    background-color: white;
+    height: 56px;
+    border: none;
+    border-bottom: 1px solid $border;
+}
+
+.btn-focus:focus {
+    @extend .when-focused;
+}
+
+.btn-focus:hover {
+    @extend .on-hover;
+}
+
+.category {
+    margin-bottom: 15px;
+}

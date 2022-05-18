@@ -1,0 +1,35 @@
+@import "@assets/globals";
+
+.react-time-picker__wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    border: 1px solid $lila;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 14vw;
+    min-width: fit-content;
+}
+
+.react-time-picker__clear-button.react-time-picker__button {
+    outline: none;
+    opacity: 60%;
+}
+
+.react-time-picker__clear-button.react-time-picker__button:hover {
+  opacity: 90%;
+}
+
+.react-time-picker__clock-button.react-time-picker__button:focus {
+  outline: none;
+}
+
+.react-time-picker__clock-button__icon.react-time-picker__button__icon {
+  stroke: black;
+  opacity: 60%;
+}
+
+.react-time-picker__button:enabled:hover .react-time-picker__button__icon, .react-time-picker__button:enabled:focus .react-time-picker__button__icon {
+stroke: black;
+opacity: 90%;
+}

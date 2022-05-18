@@ -1,0 +1,45 @@
+@import "@assets/globals";
+
+.btn-container {
+    margin-top: 5%;
+    text-align: left;
+}
+
+.btn-style {
+    @extend .font-login;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.84px;   
+    width: 200px; 
+    height: 56px;
+    border: none;
+    background-color: white;
+    text-align: center;
+}
+
+.first-btn {
+    @extend .btn-style;
+    text-align: left;
+}
+
+.line-btn {
+    border-top: 1px solid $border;
+    width: 100%;
+}
+
+.btn-style-chosen, .btn-style:focus {
+    @extend .when-focused;
+    border-bottom: 1px solid $purple;
+    font-weight: bold;
+}
+
+.only-btn {
+    @extend .btn-style;
+    @extend .btn-style-chosen;
+    border: none;
+    text-align: left;
+    width: 100%;
+    margin-top: 5%;
+    height: fit-content;
+    padding-bottom: 15px;
+}

@@ -1,0 +1,41 @@
+@import "@assets/globals";
+
+.blackheader-navbar {
+    @extend .style-div;
+    @extend .vertical-center;
+    right: 12.43%;
+    width: 209px;
+}
+
+.create-account, .login, .or, .user {
+    @extend .style-font;
+}
+
+.create-account, .login, .or {
+    @extend .style-div-element;
+    margin: 0px 13px;
+}
+
+.create-account, .login, .user {
+    color: white;
+}
+
+.create-account {
+    order: 2;
+    margin-right: 0;
+}
+
+.or {
+    order: 1;
+}
+
+.login {
+    order: 0;
+    margin-left: 0;
+}
+
+.user {
+    @extend .position-right;
+    background-color: $darkbackground;
+    border: 0;
+}

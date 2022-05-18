@@ -1,0 +1,80 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  liquibase:
+    enabled: false
+  flyway:
+     baseline-version: 0
+     baseline-on-migrate: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    protocol: smtp
+    properties:
+      "mail.transport.protocol": smtp
+      "mail.smtp.auth": true
+      "mail.smtp.starttls.enable": true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: ${GOOGLE_ID}
+            clientSecret: ${GOOGLE_SECRET}
+            scope:
+              - email
+              - profile
+          facebook:
+            clientId: ${FACEBOOK_ID}
+            clientSecret: ${FACEBOOK_SECRET}
+            scope:
+              - email
+              - public_profile
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  quartz:
+    job-store-type: jdbc
+    properties:
+     "org.quartz.threadPool.threadCount": 5
+     "org.quartz.jobStore.driverDelegateClass": org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
+
+jwt:
+  secret: ${JWT_SECRET}
+
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: true
+    configUrl: /v3/api-docs
+
+frontend:
+  path: ${FRONTEND_PATH}
+
+backend:
+  path: ${BACKEND_PATH}
+
+cloud:
+  name: ${CLOUD_NAME}
+  key: ${CLOUD_KEY}
+  secret: ${CLOUD_SECRET}
+
+stripe:
+  apiKey: ${STRIPE_API_KEY}

@@ -1,0 +1,41 @@
+@import "@assets/globals";
+
+.msg-container {
+    height: 59px;
+    background-color: $msg-background;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.msg-error, .msg-notification, .msg-win {
+    @extend .style-font-text;
+    font-weight: 700;
+    float: left;
+    margin-left: 12%;
+}
+
+.msg-error {
+    color: $yellow;
+}
+
+.msg-win {
+    color: $green;
+}
+
+.msg-notification {
+    color: $purple;
+}
+
+.msg-container-error {
+    @extend .msg-container;
+    background-color: $error-background;
+}
+
+.msg-container-notif {
+    @extend .msg-container;
+    background-color: $notif-background;
+}
+
+

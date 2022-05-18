@@ -1,0 +1,51 @@
+@import "@assets/globals";
+@import "@pages/home/home.scss";
+
+.button-profile-normal {
+    @extend .font-login;
+    font-weight: 400;
+    border: none;
+    background-color: white;
+    padding: 15px 20px 15px 20px;
+    color: $dark;
+    margin-right: 5px;
+}
+
+.button-profile-active {
+    @extend .button-profile-normal;
+    background-color: $purple;
+    color: white;
+}
+
+.icon-selector {
+    margin-right: 15px;
+}
+
+.profile-selector-container {
+    @extend .home-container;
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 76%;
+}
+
+.profile-buttons-container {
+    width: 80%;
+    text-align: left;
+}
+
+.button-profile-normal-active {
+    @extend .button-profile-active;
+    letter-spacing: 0.63px;
+    width: 20%;
+    text-align: center;
+    margin-right: 0;
+    height: fit-content;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.button-profile-active:focus {
+    @extend .when-focused;
+    @extend .button-profile-active;
+}

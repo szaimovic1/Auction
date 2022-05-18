@@ -1,0 +1,162 @@
+@import "@assets/globals";
+@import "@pages/home/home.scss";
+@import "@components/profile_selector/profileSelector.scss";
+
+.active-sold-btns {
+    width: 100%;
+    text-align: left;
+    overflow: auto;
+}
+
+.active-sold-btns-v2 {
+    @extend .active-sold-btns;
+    border: 1px solid $lila;
+}
+
+.seller-container {
+    @extend .home-container;
+}
+
+.smb-container {
+    width: 100%;
+    text-align: right;
+}
+
+.seller-more-bidders {
+    margin-top: 10px;
+    border-radius: 50%;
+    color: $purple;
+    border: 1px solid $lila;
+    background-color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px $purple;
+}
+
+.st-col1, .st-col4, .st-col2, .st-col3 {
+    @extend .font-login;
+    color: $dark;
+}
+
+.st-col1 {
+    width: 8.6%;
+}
+
+.st-col4 {
+    width: 10%
+}
+
+.st-col2 {
+    width: 23.4%;
+}
+
+.st-col3 {
+    width: 17.2%
+}
+
+.img-seller-container {
+    width: 80px;
+    height: 80px;
+}
+
+.img-seller {
+    width: 100%;
+    height: 100%;
+}
+
+.st-name {
+    @extend .font-login;
+    font-weight: 700;
+    letter-spacing: 0.63px;
+    text-transform: capitalize;
+    vertical-align: top;
+}
+
+.st-time {
+    @extend .st-name;
+    vertical-align: middle;
+}
+
+.st-win-bid {
+    color: $green;
+}
+
+.st-regular-bid {
+    color: $blue;
+}
+
+.st-button {
+    text-align: center;
+}
+
+.bid-seller {
+    @extend .st-name;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: 3px solid $lila;
+    background-color: white;
+}
+
+.bid-seller-v2 {
+    @extend .bid-seller;
+    border-color: $purple;
+    margin-bottom: 3%;
+}
+
+.bs-purple-border {
+    border: 3px solid $purple;
+    background-color: $graybackground;
+}
+
+.unknown-code {
+    font-weight: normal;
+    color: $purple;
+    margin-top: 20px;
+}
+
+.seller-adapt-btn {
+    margin-right: 0;
+    padding: 10px 20px 10px 20px;
+}
+
+.button-seller-normal {
+    @extend .button-profile-normal;
+    @extend .seller-adapt-btn;
+    border: 1px solid $lila;
+}
+
+.button-seller-active {
+    @extend .button-profile-active;
+    @extend .seller-adapt-btn;
+}
+
+.button-seller-active:focus {
+    @extend .when-focused;
+    @extend .button-seller-active;
+}
+
+.si-win-background {
+    background-color: $graybackground;
+}
+
+.table-container-seller {
+    width: 100%;
+    text-align: left;
+    
+    td {
+        padding: 2%;
+    }
+}
+
+.si-cart-hammer {
+    width: 100%;
+    text-align: center;
+}
+
+.si-plain-div {
+    @extend .lato-text;
+    font-weight: 400;
+    color: $dark;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}

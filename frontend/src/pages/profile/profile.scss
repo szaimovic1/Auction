@@ -1,0 +1,181 @@
+@import "@assets/globals";
+@import "@pages/home/home.scss";
+
+.profile-container {
+    @extend .home-container;
+}
+
+.personal-info-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    text-align: left;
+    padding-top: 5%;
+    border: 1px solid $lila;
+}
+
+.profile-img-btn {
+    display: grid;
+    align-items: center;
+}
+
+.profile-img-div {
+    height: 60%;
+    width: 80%;
+    max-height: 360px;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile-img-btn {
+    text-align: center;
+    vertical-align: top;
+}
+
+.pi-info-div {
+    padding: 0 10% 10% 10%;
+}
+
+.pi-title {
+    @extend .pi-label;
+    width: 100%;
+    padding: 1%;
+    border: 1px solid $lila;
+    border-bottom: none;
+    text-align: left;
+}
+
+.pi-label {
+    @extend .font-login;
+    font-weight: 400;
+    color: $dark;
+}
+
+.load-img-button {
+    @extend .pi-label;
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+    max-width: 360px;
+    margin-top: 20px;
+    border: 2px solid $purple;
+    text-align: center;
+    letter-spacing: 0.63px;
+    font-weight: 700;
+}
+
+.pi-save-info {
+    @extend .load-img-button;
+    width: 15%;
+    float: right;
+    margin-bottom: 10%
+}
+
+.pi-hide {
+    display: none;
+}
+
+.pi-inputs {
+    @extend .pi-label;
+    width: 100%;
+    border: 1px solid $lila;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.pi-input-phone {
+    @extend .pi-inputs;
+    width: 65%;
+}
+
+.pi-not-verified {
+    @extend .pi-inputs;
+    background-color: $graybackground;
+    color: $red;
+    width: 35%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title-btn-hide {
+    border-bottom: 1px solid $lila;
+}
+
+.pi-dark-background {
+    background-color: $graybackground;
+}
+
+.day-birth-dropdown {
+    position: absolute;
+    z-index: 1;
+    text-align: left;
+    width: 11%;
+    display: grid;
+    grid-auto-flow: row;
+    border: 1px solid $lila;
+    max-height: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.pi-btn-dropdown {
+    border: none;
+    padding: 5px;
+    text-align: center;
+    background-color: $graybackground;
+}
+
+.pi-btn-dropdown:hover {
+    color: $purple;
+    font-weight: bold;
+}
+
+.date-birth-container {
+    display: flex;
+}
+
+.pi-label-bigger {
+    width: 70%;
+}
+
+.pi-label-addr {
+    width: 47.5%;
+}
+
+.pi-label-addr-left {
+    width: 47.5%;
+    margin-right: 5%;
+}
+
+.day-birth-div {
+    width: 30%;
+}
+
+.day-birth-btn {
+    @extend .pi-inputs;
+    background-color: white;
+    width: 100%;
+    color: $grayfiller;
+    overflow: hidden;
+}
+
+.db-middle {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.profile-img-button-align {
+    height: 100%;
+}
+
+.pi-title-btn {
+    @extend .pi-title;
+    background-color: white;
+    margin-top: 3%;
+}

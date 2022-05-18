@@ -1,0 +1,78 @@
+@import "@assets/globals";
+@import "@components/sort_grid_list/sortGridList";
+
+.search-bar {
+    @extend .style-div;
+    width: 548px;
+    height: 57.94px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, );
+    margin: auto;
+    display: inline-block;
+    border: 1px solid $lila;
+    box-sizing: border-box;
+}
+
+.input-search {
+    @extend .style-font-text;
+    bottom: 0;
+    width: 90%;
+    height: 100%;
+    padding-left: 20px;
+    border: none;
+}
+
+.tof-x-hide {
+    opacity: 0%;
+}
+
+.search-bar-hide {
+    display: none;
+}
+
+.input-search:focus {
+    @extend .when-focused;
+}
+
+.search-dropdown {
+    display: grid;
+    grid-auto-flow: row;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.search-btn-sort {
+    @extend .btn-sort; 
+    border-bottom: 1px solid $lila;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.search-icon {
+    height: 24px;
+    width: 24px;
+    text-align: right;
+}
+
+.offers-dropdown {
+    @extend .dropdown-bootstrap;
+    width: fit-content;
+    margin-left: 0;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 1550px) {
+    .search-bar {
+        display: grid;
+        grid-auto-flow: column;
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .search-bar {
+        left: 30%;
+        background-color: white;
+    }
+}

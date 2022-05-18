@@ -1,0 +1,75 @@
+@import "@assets/globals";
+
+.dropdown-bootstrap {
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    width: 17vw;
+    margin-left: 20px;
+    text-align: left;
+    background-color: whitesmoke;
+    box-shadow:2px 3px 5px #999;
+    border-radius: 25px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.block-display {
+    max-width: 150px;
+}
+
+.container-sortgridlist {
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown-hide {
+    display: none;
+}
+
+.btn-sort, .not-selected {
+    @extend .style-font-text;
+    font-weight: 400;
+    border: none;
+    background-color: whitesmoke;
+}
+
+.btn-sort:focus, .selected-btn:focus {
+    @extend .when-focused;
+    background-color: whitesmoke;
+}
+
+.selected-btn {
+    @extend .btn-sort;
+    background-color: white;
+    color: $purple;
+}
+
+.not-selected {
+    @extend .selected-btn;
+    color: $grayfiller;
+}
+
+.btn-main-sort {
+    @extend .btn-sort;
+    background-color: white;
+    border: 1px solid $lila;
+    height: 43px;
+    width: 17vw;
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.grid-list-display {
+    float: right;
+    align-self: center;
+    margin-top: 1vh;
+    margin-right: 5%;
+}
+
+.selected-btn:focus {
+    color: $purple;
+    background-color: white;
+}

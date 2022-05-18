@@ -1,0 +1,116 @@
+$darkbackground: #252525;
+$grayfiller: #9B9B9B;
+$lila: #E3E3E3;
+$purple: #8367D8;
+$dark: #252525;
+$border: #D8D8D8;
+$loginblack: #323232;
+$msg-background: #F0F3EE;
+$yellow: #AB944E;
+$error-background: #F6F2E5;
+$notif-background: #F1EFFA;
+$green: #417505;
+$graybackground: #ECECEC;
+$red: #E10000;
+$blue: #0066CC;
+
+.style-header {
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    z-index: 300;
+}
+
+.style-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+}
+
+.style-div-column {
+    @extend .style-div;
+    flex-direction: column;
+}
+
+.style-div-element {
+    color: $grayfiller;
+    flex: none;
+    flex-grow: 0;
+}
+
+.font-lato {
+    font-family: Lato;
+    font-style: normal;
+}
+
+.style-font {
+    @extend .font-lato;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+.lato-text {
+    @extend .font-lato;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.font-login {
+    @extend .font-lato;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;    
+}
+
+.style-font-text {
+    @extend .style-font;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.vertical-center {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.position-right {
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+.column-parent {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-content {
+    @extend .column-parent;
+    flex-wrap:wrap;
+    align-content:normal;
+    justify-content:normal;
+    align-items:normal;
+}
+
+.form-grid {
+    align-items: center;
+    display: grid;
+}
+
+.when-focused {
+    background-color: white;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.on-hover {
+    color: $purple;
+}

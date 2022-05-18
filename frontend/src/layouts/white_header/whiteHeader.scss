@@ -1,0 +1,29 @@
+@import "@assets/globals";
+
+.white-header {
+    @extend .style-header;
+    height: 73.94px;
+    background-color: white;
+    top: 40px;
+}
+
+.logo {
+    @extend .style-div;
+    width: 163px;
+    height: 56px;
+    left: 14%;
+    bottom: 0;
+    order: 0;
+}
+
+.center {
+    margin-left: -80px;
+    left: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .search-bar {
+      min-width: 200px;
+    }
+}
+

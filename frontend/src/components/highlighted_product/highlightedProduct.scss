@@ -1,0 +1,58 @@
+@import "@assets/globals";
+
+.highlighted-container {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    text-align: left;
+    grid-template-rows: auto minmax(0,1fr);
+}
+
+.img-container {
+    text-align: right;
+}
+
+.highlight-details {
+    margin-left: 20%;
+}
+
+.highlighted-img {
+    @extend .vertical-center;
+    position: relative;
+    width: 80%;
+    height: 100%;
+    max-height: 430px;
+    max-width: 370px;
+}
+
+.name {
+    @extend .font-lato;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 51px;   
+    letter-spacing: 0.84px;
+}
+
+.price {
+    @extend .name; 
+    color: $purple;
+}
+
+.long-text {
+    @extend .lato-text;
+    max-width: 500px;
+    color: $grayfiller;
+    margin-top: 5px;
+}
+
+.bid {
+    @extend .font-login;
+    font-weight: bold;
+    color: $dark;
+    letter-spacing: 0.63px;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-color: $purple;
+    margin-top: 30%;
+    background-color: white;
+}
